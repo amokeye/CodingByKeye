@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>Keye O. | Portfolio</title>
+</head>
+
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url("./assets/flowers1.jpg");
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.work1 {grid-area: one;}
+.work2 {grid-area: two;}
+.work3 {grid-area: three;}
+.work4 {grid-area: four;}
+.work5 {grid-area: five;}
+
+.grid-container1 {
+    display: grid;
+    grid-template-areas:
+        'one one one one four four'
+        'two three three three four four'
+        'two five five five five five';
+    grid-gap: 2px;
+    background-color: yellow;
+    padding: 2px;
+}
+
+.grid-container1 > div {
+    background-color: black;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 35px;
+}
+
+</style>
+
+<body>
+<div class="grid-container">
+    <div class="list">
+    <div class="links">
+        <ul>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#my-work">My Work</a>
+            </li>
+            <li>
+                <a href="#contact-info">Contact Information</a>
+            </li>
+        </ul>
+    </div>   
+    </div>
+
+    <div class="header">
+        <h1 class="shadow">
+            <div class="name">Coding by Keye</div>
+        </h1>
+    </div>
+        
+    <div class="about-me">
+        <h2>About Me</h2>
+            <p>
+                <strong><i>Aspiring web developer: Amokeye Ogar.</i></strong> My coding background includes coding for Visual Basic for Application and 
+                binary coding to function a Raspberry Pi system. I am currently pursuing additional education in coding and web 
+                development via UC Berkeley's Coding Boot Camp. The end goal is to work on application development with the knowledge 
+                I obtain; however, I am open to any potential avenues and career paths that this knowledge will open up.
+            </p>
+    </div>
+
+    <div id="my-work" class="my-work">
+        <h2>My Work</h2>
+            <p>
+                <div class="grid-container1">
+                    <div class="work1">1</div>
+                    <div class="work2">2</div>
+                    <div class="work3">3</div>
+                    <div class="work4">4</div>
+                    <div class="work5">5</div>
+                </div>
+            </p>
+    </div>
+       
+    <div id="contact-info" class="contact-info">
+        <h2>Contact Information</h2>
+            <p>
+                <div class="social-media">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/bgirl4God" target="_blank"><img src="./assets/facebook.png">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/imokyay/" target="_blank"><img src="./assets/instagram.png">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="http://linkedin.com/in/amokeye-ogar/" target="_blank"><img src="./assets/linkedin.png">Linked In</a>
+                        </li>
+                        <li>
+                            <a href="https://stackexchange.com/users/18991611/amokeye" target="_blank"><img src="./assets/overflow.png">Stack Overflow</a>
+                        </li>
+                    </ul>
+                </div>
+            </p>
+    </div>
+
+</div>
+</body>
+
+</html>
